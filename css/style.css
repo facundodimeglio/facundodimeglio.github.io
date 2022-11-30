@@ -41,6 +41,9 @@ li{
 }
 
 
+body{
+    background-color: black;
+}
 
 label{
     color: white;
@@ -61,6 +64,12 @@ label{
     background-image: url(/images/fondo1.jpg);
     background-size: cover;
 
+}
+
+
+.iframe-container{
+    width: 50%;
+    height: 100%;
 }
 
 /* .boton-banner{
