@@ -5,83 +5,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <title>Contacto Benz</title>
 </head>
 
 <body>
 
-
-    <header class="navbar navbar-expand-lg bg-light">
+    <header class="navbar navbar-expand-lg ">
         <div class="container">
             <a href="/index.html">
-                <img src="/images/logo-mercedes.jpg" alt="Logo de Mercedes Benz" id="logo-header">
+                <img class="w-25 h-100 img-fluid" src="/images/logo-mercedes.jpg" alt="Logo de Mercedes Benz"
+                    id="logo-header">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class="collapse navbar-collapse" id="navbarNav">
+
+            <nav class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        <a class="nav-link active text-white" aria-current="page" href="/index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./vehiculos.html">Vehiculos</a>
+                        <a class="nav-link text-white" href="./vehiculos.html">Vehiculos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./concesionarios.html">Consecionarios</a>
+                        <a class="nav-link text-white" href="./concesionarios.html">Consecionarios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./tienda.html">Venta de Accesorios</a>
+                        <a class="nav-link text-white" href="./tienda.html">Venta de Accesorios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                        <a class="nav-link text-white" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
             </nav>
+
+            <form class="d-flex justify-content-end" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            
         </div>
     </header>
 
 
 
-    <main>
+    <main class="container">
         <h1>Contactanos para asesorarte</h1>
-        <img class="gtr-contacto" src="/images/amggtr2.jpg" alt="Interior de un Mercedes Benz">
+
+        <div>
+            <img class="gtr-contacto img-fluid" src="/images/amggtr2.jpg" alt="Interior de un Mercedes Benz">
+            <h2 class="mt-5 mb-3">Formulario de Contacto</h2>
+        </div>
+
         <div class="form-contacto">
             <form action="">
-                <div>
-                    <label for="nombre-contacto">Nombre</label>
-                    <input type="text" name="" id="nombre-contacto" required>
 
-                    <label for="apellido-contacto">Apellido</label>
-                    <input type="text" name="" id="apellido-contacto" required>
+                <div class="mb-3 row">
+                    <div class="col-6">
+                        <label for="nombre-contacto" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre-contacto"
+                            placeholder="Nombre" required>
+                    </div>
+
+                    <div class="col-6">
+                        <label for="apellido-contacto" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido-contacto"
+                            required placeholder="Apellido" required>
+                    </div>
                 </div>
 
+                <div class="mb-3 row">
+                    <div class="col-6">
+                        <label for="email-contacto" class="form-label">E-Mail</label>
+                        <input type="email" class="form-control" id="email-contacto"
+                            placeholder="ejemplo@gmail.com">
+                    </div>
 
-                <div>
-                    <label for="email-contacto">E-Mail</label>
-                    <input type="email" name="" id="email-contacto" required placeholder="ejemplo@gmail.com">
-
-                    <label for="numerotel-contacto">Número de telefono</label>
-                    <input type="text" name="" id="numerotel-contacto" required placeholder="1122524328">
+                    <div class="col-6">
+                        <label for="numerotel-contacto" class="form-label">Número de telefono</label>
+                        <input type="number" class="form-control" id="numerotel-contacto"
+                            required placeholder="1122524328">
+                    </div>
                 </div>
 
-                <div>
-                    <label id="label-novedades" for="consulta-contacto">Dejanos tu consulta y te responderemos a la
+                <div class="mb-3">
+                    <label for="consulta-contacto" class="form-label">Dejanos tu consulta y te responderemos a la
                         brevedad</label>
-                    <textarea name="" id="consulta-contacto" cols="30" rows="10" required
-                        placeholder="Escriba su consulta aqui"></textarea>
+                    <textarea class="form-control" id="consulta-contacto" placeholder="Escriba su consulta aqui" rows="3"></textarea>
                 </div>
 
-                <div>
-                    <label for="novedades-contacto">¿Desea recibir novedades?</label>
-                    <input type="checkbox" value="aceptar" id="novedades-contacto" required>
+                <div class="row">
+
+                    <div class="col-12">
+                        <label for="novedades-contacto">¿Desea recibir novedades?</label>
+                        <input type="checkbox" value="aceptar" id="novedades-contacto" required>
+                    </div>
+
+                    <div class="col-12">
+                        <input type="submit" value="Enviar">
+                    </div>
                 </div>
 
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
             </form>
         </div>
 
@@ -138,9 +167,11 @@
         </div>
 
         <img id="logo-footer" src="/images/logo-mercedes.jpg" alt="Logo Mercedes Benz">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
