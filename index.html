@@ -12,9 +12,12 @@
 </head>
 
 <body>
-
+    <!-- INICIO DEL HEADER -->
     <header class="navbar navbar-expand-lg ">
+
+        <!-- CAJA DE TODO EL HEADER -->
         <div class="container">
+            <!-- LOGO MERCEDES EN EL HEADER -->
             <a href="/index.html">
                 <img class="w-25 h-100 img-fluid" src="/images/logo-mercedes.jpg" alt="Logo de Mercedes Benz"
                     id="logo-header">
@@ -24,6 +27,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- NAV -->
             <nav class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -44,6 +48,7 @@
                 </ul>
             </nav>
 
+            <!-- BOTON DE BUSCADOR EN HEADER -->
             <form class="d-flex justify-content-end" role="search">
                 <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -53,40 +58,67 @@
     </header>
 
 
-
+    <!-- MAIN -->
     <main>
+
+ 
+
+
+
+
         <div class="caja-main ">
             <h1>Concesionarios Benz</h1>
             <section>
+                <!-- CAJA DEL BANNER CON BOTON BIEN HECHA -->
+                <div class="contenedor">
+                    <div class="wrap">
+                        <div class="box">    
+                            <div class="botones">
+                                <a href="#" class="btn btn-secondary bg-black ">Ver</a>					
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CAJA DEL BANNER CON BOTON
                 <div class="w-100">
                     <div class="position-relative">
                         <img class="banner-principal img-fluid " src="/images/mercedesprincipal.png"
                             alt="Varios Mercedes Benz exhibiendosé">
-                        <div class="">
-                            <div class="d-flex justify-content-center">
-                                <button type="button" class="btn btn-secondary">Leer más</button> 
-                            </div>
                     </div>
 
-                    <div class="row mt-5">
+                        
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary">Leer más</button> 
+                    </div>
+                </div> -->
+
+                    <!-- CAJA DE LOS DOS BANNERS SECUNDARIOS(2 FOTOS EN MISMA LINEA) -->
+                    <div class="row mt-5 w-100 g-1">
+
                         <div class="col-6">
                             <img class="imagen-secund  img-fluid" src="/images/mercedesgris.jpg"
                                 alt="Mercedes Benz Color Gris">
                         </div>
+
                         <div class="col-6">
                             <img class="imagen-secund img-fluid" src="/images/gtr.jpg"
                                 alt="Mercedes Benz GTR color gris">
                         </div>
+
                     </div>
             </section>
 
 
-
+            <!-- SECCION NOTICIAS -->
             <section class="container mt-5 mb-5">
                 <h2>Noticias</h2>
-                <div class="card-group">
-                    <div class="card bg-black">
-                        <img src=" /images/clasecgris.jpg" class="card-img-top" alt="...">
+
+                <!-- CAJA NOTICIAS -->
+                <div class="card-group gap-4">
+                    <!-- NOTICIA 1 -->
+                    <div class="card caja-noticias">
+                        <img src=" /images/clasecgris.jpg" class="card-img-top" alt="Noticia acerca del lanzamiento Mercedes Benz Clase C">
                         <div class="card-body">
                             <article>
                                 <h5 class="card-title fw-bold text-white">Análisis del Mercedes-Benz Clase C: un sedán clásico y
@@ -96,13 +128,15 @@
                                     interior vanguardista.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 <div class="d-flex justify-content-center align-content-end">
-                                    <button type="button" class="btn btn-secondary boton-banner">Leer más</button> 
+                                    <button type="button" class="btn btn-secondary boton-banner bg-black">Leer más</button> 
                                 </div>
                             </article>
                         </div>
                     </div>
-                    <div class="card bg-black">
-                        <img src="/images/noticia2.jpg" class="card-img-top" alt="...">
+
+                    <!-- NOTICIA 2 -->
+                    <div class="card caja-noticias">
+                        <img src="/images/noticia2.jpg" class="card-img-top" alt="Noticia acerca del nuevo Mercedes A250 AMG">
                         <div class="card-body">
                             <article>
                                 <h5 class="card-title fw-bold text-white">Nuevo Mercedes Benz A250 AMG</h5>
@@ -114,13 +148,15 @@
                                     Rastatt (Alemania).</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 <div class="d-flex justify-content-center align-content-end">
-                                    <button type="button" class="btn btn-secondary boton-banner">Leer más</button> 
+                                    <button type="button" class="btn btn-secondary boton-banner bg-black">Leer más</button> 
                                 </div>
                             </article>
                         </div>
                     </div>
-                    <div class="card bg-black">
-                        <img src="/images/noticia3.jpg" class="card-img-top" alt="...">
+
+                    <!-- NOTICIA 3 -->
+                    <div class="card caja-noticias">
+                        <img src="/images/noticia3.jpg" class="card-img-top" alt="Noticia acerca de Mercedes en Formula 1">
                         <div class="card-body">
                             <article>
                                 <h5 class="card-title fw-bold text-white">Lewis Hamilton: "Tuvimos un coche difícil todo el fin de
@@ -132,7 +168,7 @@
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </article>
                             <div class="d-flex justify-content-center">
-                                <button type="button" class="btn btn-secondary boton-banner">Leer más</button> 
+                                <button type="button" class="btn btn-secondary boton-banner bg-black">Leer más</button> 
                             </div>
                         </div>
                     </div>
@@ -140,15 +176,19 @@
             </section>
 
 
-
+            <!-- CAJA VIDEO -->
             <div class="caja-video mt-5">
                 <video src="./videos/videoamg.mp4" class="videoamg" autoplay controls muted></video>
             </div>
+
         </div>
+
+
     </main>
 
-
+    <!-- FOOTER -->
     <footer class="d-flex">
+        <!-- CAJA VEHICULOS DEL FOOTER -->
         <div class="footer-vehiculos">
             <a href="./pages/vehiculos.html">
                 <h4>Vehiculos</h4>
@@ -162,6 +202,7 @@
 
         </div>
 
+        <!-- CAJA ATENCION AL CLIENTE DEL FOOTER -->
         <div class="footer-atencion">
             <a href="./pages/contacto.html">
                 <h4>Atención al cliente</h4>
@@ -175,6 +216,7 @@
 
         </div>
 
+        <!-- CAJA POSVENTA DEL FOOTER -->
         <div class="footer-posventa">
             <h4>Posventa</h4>
             <ul>
@@ -187,6 +229,7 @@
 
         </div>
 
+        <!-- CAJA REDES DEL FOOTER -->
         <div class="footer-redes">
             <h4>Siguenos en</h4>
             <ul>
@@ -198,9 +241,12 @@
 
         </div>
 
+        <!-- LOGO MERCEDES EN EL FOOTER -->
         <img class="logo-footer w-10 h-25" src="./images/logo-mercedes.jpg" alt="Logo Mercedes Benz">
+
     </footer>
 
+    <!-- JS BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
